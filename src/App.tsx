@@ -8,6 +8,7 @@ import ContactUs from './pages/ContactUs';
 import CancellationPolicy from './pages/CancellationPolicy';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
+import './index.css';
 
 function App() {
   return (

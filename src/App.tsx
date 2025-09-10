@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from 'wouter';
+
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import AboutServices from './pages/AboutServices';
+import ContactUs from './pages/ContactUs';
+import CancellationPolicy from './pages/CancellationPolicy';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen flex flex-col">
+      <main className="flex-grow">
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/about-us" component={AboutUs} />
+          <Route path="/services" component={AboutServices} />
+          <Route path="/contact-us" component={ContactUs} />
+          <Route path="/cancellation-policy" component={CancellationPolicy} />
+          <Route path="/privacy-policy" component={PrivacyPolicy} />
+          <Route path="/terms-and-conditions" component={TermsAndConditions} />
+        </Switch>
+      </main>
     </div>
   );
 }

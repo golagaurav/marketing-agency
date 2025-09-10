@@ -1,32 +1,31 @@
-import React from 'react';
+import * as React from "react";
+import { cn } from "../../lib/utils";
 
-interface CardProps {
+export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
   description: string;
-  imageSrc?: string;
-  footer?: React.ReactNode;
-  className?: string;
+  imageUrl?: string;
 }
 
-const Card: React.FC<CardProps> = ({
-  title,
-  description,
-  imageSrc,
-  footer,
-  className = '',
-}) => {
-  return (
-    <div className={`bg-white shadow-md rounded-lg overflow-hidden border border-gray-200 ${className}`}>
-      {imageSrc && (
-        <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />
-      )}
-      <div className="p-6">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600">{description}</p>
-        {footer && <div className="mt-4">{footer}</div>}
+export const Card = React.forwardRef<HTMLDivElement, CardProps>(
+  ({ className, title, description, imageUrl, ...props }, ref) => {
+    return (
+      <div
+        className={cn(
+          "max-w-sm rounded overflow-hidden shadow-lg bg-white",
+          className
+        )}
+        ref={ref}
+        {...props}
+      >
+        {imageUrl && <img className="w-full" src={imageUrl} alt={title} />}
+        <div className="px-6 py-4">
+          <div className="font-bold text-xl mb-2">{title}</div>
+          <p className="text-gray-700 text-base">{description}</p>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+);
 
-export default Card;
+Card.displayName = "Card";

@@ -10,6 +10,9 @@ const Navbar = () => {
         <Button onClick={() => window.location.href = '/about-us'}>About Us</Button>
         <Button onClick={() => window.location.href = '/services'}>Services</Button>
         <Button onClick={() => window.location.href = '/contact-us'}>Contact</Button>
+        <Button onClick={() => window.location.href = '/cancellation-policy'}>CancellationPolicy</Button>
+        <Button onClick={() => window.location.href = '/privacy-policy'}>PrivacyPolicy</Button>
+        <Button onClick={() => window.location.href = '/terms-and-conditions'}>TermsAndConditions</Button>
       </div>
     </nav>
   );

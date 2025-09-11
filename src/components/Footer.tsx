@@ -6,13 +6,13 @@ const Footer = () => {
       <p className="mb-2 md:mb-0">&copy; 2025 Marketing Agency. All rights reserved.</p>
       
       <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-4 justify-center md:justify-end">
-        <a href="/cancellation-policy" className="btn-link">
+        <a href="/cancellation-policy" className="btn-link text-white hover:text-yellow-400 transition-colors duration-300">
           Cancellation Policy
         </a>
-        <a href="/privacy-policy" className="btn-link">
+        <a href="/privacy-policy" className="btn-link text-white hover:text-yellow-400 transition-colors duration-300">
           Privacy Policy
         </a>
-        <a href="/terms-and-conditions" className="btn-link">
+        <a href="/terms-and-conditions" className="btn-link text-white hover:text-yellow-400 transition-colors duration-300">
           Terms & Conditions
         </a>
       </div>

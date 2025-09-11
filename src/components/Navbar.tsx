@@ -10,7 +10,7 @@ const Navbar = () => {
         Marketing Agency
       </div>
 
-      {/* Hamburger Icon for mobile */}
+      {/* Hamburger menu button for mobile */}
       <div className="md:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -22,56 +22,45 @@ const Navbar = () => {
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
           >
             {isOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             )}
           </svg>
         </button>
       </div>
 
-      {/* Desktop Menu */}
-      <div className="hidden md:flex md:space-x-4">
-        <a
-          href="/"
-          className="inline-block px-4 py-2 hover:bg-gray-700 rounded-md transition-colors"
+      {/* Desktop menu */}
+      <div className="hidden md:flex md:space-x-6">
+        <button
+          onClick={() => window.location.href = '/'}
+          className="text-white hover:text-yellow-400 transition-colors duration-300"
         >
           Home
-        </a>
-        <a
-          href="/about-us"
-          className="inline-block px-4 py-2 hover:bg-gray-700 rounded-md transition-colors"
+        </button>
+        <button
+          onClick={() => window.location.href = '/about-us'}
+          className="text-white hover:text-yellow-400 transition-colors duration-300"
         >
           About Us
-        </a>
-        <a
-          href="/services"
-          className="inline-block px-4 py-2 hover:bg-gray-700 rounded-md transition-colors"
+        </button>
+        <button
+          onClick={() => window.location.href = '/services'}
+          className="text-white hover:text-yellow-400 transition-colors duration-300"
         >
           Services
-        </a>
-        <a
-          href="/contact-us"
-          className="inline-block px-4 py-2 hover:bg-gray-700 rounded-md transition-colors"
+        </button>
+        <button
+          onClick={() => window.location.href = '/contact-us'}
+          className="text-white hover:text-yellow-400 transition-colors duration-300"
         >
           Contact
-        </a>
+        </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile menu */}
       <MobileMenu isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </nav>
   );

@@ -8,9 +8,13 @@ const Home = () => {
 
       {/* Marquee */}
       <div className="overflow-hidden whitespace-nowrap bg-primary text-white py-0">
+
+        {/* ...
         <div className="inline-block animate-marquee text-lg font-semibold px-6">
           Grow Your Business with Us — Trusted by 1,000+ clients worldwide &nbsp;
         </div>
+          ... */}
+
       </div>
 
       {/* Hero / Banner Section */}
@@ -32,6 +36,8 @@ const Home = () => {
             <p className="text-lg md:text-xl text-gray-200 max-w-md animate-fadeInUp delay-200">
               We craft experiences that engage, convert and retain. Your partner in scalable digital solutions.
             </p>
+
+            {/* ...
             <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center md:justify-start gap-4 md:gap-6 mt-6 animate-fadeInUp delay-400">
               <button className="bg-primary text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition">
                 Get Started
@@ -40,12 +46,18 @@ const Home = () => {
                 Learn More
               </button>
             </div>
+            ... */}
+
             {/* Social proof / small logos or ratings */}
             <div className="mt-8 flex items-center justify-center md:justify-start gap-4 animate-fadeInUp delay-600">
               <span className="bg-white text-gray-800 px-4 py-2 rounded-full text-sm font-medium">
                 ⭐️ 4.9/5 Reviews
               </span>
+
+              {/* ...
               <span className="text-gray-200 text-sm">Trusted by 500+ Businesses</span>
+              ... */}
+
             </div>
           </div>
 

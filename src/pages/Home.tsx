@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-
+<main className="pt-10">
       {/* Marquee */}
       <div className="overflow-hidden whitespace-nowrap bg-primary text-white py-0">
 
@@ -138,7 +138,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+              </main>
       <Footer />
     </>
   );

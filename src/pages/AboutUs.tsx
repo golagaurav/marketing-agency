@@ -1,6 +1,9 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import AmitImg from '../assets/team/amit.webp';
+import NehaImg from '../assets/team/neha.webp';
+import RahulImg from '../assets/team/rahul.webp';
 
 const AboutUs = () => {
   return (
@@ -49,20 +52,24 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* Team Section (Optional) */}
+        {/* ✅ Team Section with Images */}
         <section className="mb-20 text-center">
           <h2 className="text-2xl font-bold mb-6">Meet Our Team</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {[
-              { name: "Amit Sharma", role: "Founder & CEO" },
-              { name: "Neha Patel", role: "Creative Director" },
-              { name: "Rahul Verma", role: "Lead Developer" },
+              { name: "Amit Sharma", role: "Founder & CEO", img: AmitImg },
+              { name: "Neha Patel", role: "Creative Director", img: NehaImg },
+              { name: "Rahul Verma", role: "Lead Developer", img: RahulImg },
             ].map((member, index) => (
               <div
                 key={index}
                 className="bg-secondary p-6 rounded-lg shadow hover:shadow-lg transition text-center"
               >
-                <div className="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4" />
+                <img
+                  src={member.img}
+                  alt={member.name}
+                  className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
+                />
                 <h3 className="text-lg font-semibold">{member.name}</h3>
                 <p className="text-gray-600">{member.role}</p>
               </div>

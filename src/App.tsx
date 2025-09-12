@@ -12,7 +12,7 @@ import './index.css';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen pb-14 flex flex-col">
       <main className="flex-grow">
         <Switch>
           <Route path="/" component={Home} />

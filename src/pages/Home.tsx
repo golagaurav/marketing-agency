@@ -74,7 +74,7 @@ const Home = () => {
 
       {/* Other Sections */}
       {/* Services Section */}
-      <section id="services" className="py-20 bg-secondary px-6">
+      <section id="services" className="py-6 bg-secondary px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">What We Do Best</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

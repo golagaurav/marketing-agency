@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div
-          className="text-xl font-bold cursor-pointer"
+          className="hover:text-yellow-400 text-xl font-bold cursor-pointer"
           onClick={() => (window.location.href = '/')}
         >
           Marketing Agency
@@ -36,7 +36,7 @@ const Navbar = () => {
             <button
               key={index}
               onClick={() => (window.location.href = item.href)}
-              className="hover:text-yellow-400 transition-colors duration-300"
+              className="hover:text-yellow-400 font-bold transition-colors duration-300"
             >
               {item.label}
             </button>

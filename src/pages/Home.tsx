@@ -20,6 +20,7 @@ const Home = () => {
       </div>
 
       {/* Hero / Banner Section */}
+      
       <section className="relative h-screen md:h-[80vh] overflow-hidden">
         {/* Background image */}
         <div
@@ -73,13 +74,10 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Other Sections */}
-
       {/* Services Section */}
       <Services />
 
-        {/* Simple Solutions Section */}
+      {/* Simple Solutions Section */}
       <SimpleSolutions />
       
       </main>

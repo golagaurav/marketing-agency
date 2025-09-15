@@ -48,10 +48,10 @@ const Home = () => {
               {/* CTA and Social Proof */}
               <div className="mt-8 flex flex-col md:flex-row items-center gap-4 animate-fadeInUp delay-600">
                 <Link href="/get-started">
-  <button className="bg-white text-primary font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">
-    Get Started
-  </button>
-</Link>
+              <button className="bg-white text-primary font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">
+                    Get Started
+              </button>
+                </Link>
                 <span className="bg-white text-gray-800 px-4 py-2 rounded-full text-sm font-medium">
                   ⭐️ 4.9/5 Reviews
                 </span>

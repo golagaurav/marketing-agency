@@ -52,7 +52,7 @@ return (
             <div>
                 <label className="block text-sm font-medium text-gray-700">Your Project</label>
                 <textarea
-                rows="5"
+                rows={5}
                 placeholder="Tell us what you need..."
                 className="mt-1 w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
                 required

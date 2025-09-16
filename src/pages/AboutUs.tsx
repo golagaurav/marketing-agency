@@ -13,7 +13,10 @@ const AboutUs = () => {
       <main className="py-16 px-6 max-w-6xl mx-auto text-gray-800">
         {/* Hero / Intro Section */}
         <section className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-primary mb-4">About Us</h1>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Icon name="FaInfoCircle" size={30} color="#cde546ff" />
+            <h1 className="text-4xl font-bold text-primary">About Us</h1>
+          </div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             We are a passionate team of digital strategists, developers, and designers helping brands grow and thrive in the online world.
           </p>
@@ -55,7 +58,10 @@ const AboutUs = () => {
 
         {/* ✅ Team Section with Colorful Social Icons */}
         <section className="mb-20 text-center">
-          <h2 className="text-2xl font-bold mb-6">Meet Our Team</h2>
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <Icon name="FaUsers" size={26} color="#45d4b1ff" />
+              <h2 className="text-2xl font-bold">Meet Our Team</h2>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {[
               {

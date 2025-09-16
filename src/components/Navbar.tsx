@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Icon from './ui/icon'; // ✅ adjust path if needed
 import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
@@ -10,10 +11,10 @@ const Navbar = () => {
   }, [isOpen]);
 
   const navItems = [
-    { label: 'Home', href: '/' },
-    { label: 'About Us', href: '/about-us' },
-    { label: 'Services', href: '/services' },
-    { label: 'Contact', href: '/contact-us' },
+    { label: 'Home', href: '/', icon: 'FaHome' },
+    { label: 'About Us', href: '/about-us', icon: 'FaInfoCircle' },
+    { label: 'Services', href: '/services', icon: 'FaServicestack' },
+    { label: 'Contact', href: '/contact-us', icon: 'FaEnvelope' },
   ];
 
   return (
@@ -36,8 +37,9 @@ const Navbar = () => {
             <button
               key={index}
               onClick={() => (window.location.href = item.href)}
-              className="hover:text-yellow-400 font-bold transition-colors duration-300"
+              className="hover:text-yellow-400 font-bold transition-colors duration-300 flex items-center gap-2"
             >
+              <Icon name={item.icon} size={18} color="white" />
               {item.label}
             </button>
           ))}

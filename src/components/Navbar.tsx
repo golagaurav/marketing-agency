@@ -11,10 +11,10 @@ const Navbar = () => {
   }, [isOpen]);
 
   const navItems = [
-    { label: 'Home', href: '/', icon: 'FaHome' },
-    { label: 'About Us', href: '/about-us', icon: 'FaInfoCircle' },
-    { label: 'Services', href: '/services', icon: 'FaServicestack' },
-    { label: 'Contact', href: '/contact-us', icon: 'FaEnvelope' },
+    { label: 'Home', href: '/', icon: 'FaHome', color: '#3182CE' },          // Blue
+    { label: 'About Us', href: '/about-us', icon: 'FaInfoCircle', color: '#D69E2E' },  // Amber
+    { label: 'Services', href: '/services', icon: 'FaServicestack', color: '#38A169' }, // Green
+    { label: 'Contact', href: '/contact-us', icon: 'FaEnvelope', color: '#E53E3E' },    // Red
   ];
 
   return (
@@ -39,7 +39,7 @@ const Navbar = () => {
               onClick={() => (window.location.href = item.href)}
               className="hover:text-yellow-400 font-bold transition-colors duration-300 flex items-center gap-2"
             >
-              <Icon name={item.icon} size={18} color="white" />
+              <Icon name={item.icon} size={18} color={item.color} />
               {item.label}
             </button>
           ))}

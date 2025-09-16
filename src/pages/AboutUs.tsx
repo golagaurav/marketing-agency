@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Icon from '../components/ui/icon'; // Make sure this path is correct
 import AmitImg from '../assets/team/amit.webp';
 import NehaImg from '../assets/team/neha.webp';
 import RahulImg from '../assets/team/rahul.webp';
@@ -52,14 +53,41 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* ✅ Team Section with Images */}
+        {/* ✅ Team Section with Colorful Social Icons */}
         <section className="mb-20 text-center">
           <h2 className="text-2xl font-bold mb-6">Meet Our Team</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {[
-              { name: "Amit Sharma", role: "Founder & CEO", img: AmitImg },
-              { name: "Neha Patel", role: "Creative Director", img: NehaImg },
-              { name: "Rahul Verma", role: "Lead Developer", img: RahulImg },
+              {
+                name: 'Amit Sharma',
+                role: 'Founder & CEO',
+                img: AmitImg,
+                socials: [
+                  { name: 'FaInstagram', url: 'https://www.instagram.com/neha', color: '#E1306C' },
+                  { name: 'FaTwitter', url: 'https://twitter.com/rahul', color: '#1DA1F2' },
+                  { name: 'FaWhatsapp', url: 'https://wa.me/918888888888', color: '#25D366' },
+                ],
+              },
+              {
+                name: 'Neha Patel',
+                role: 'Creative Director',
+                img: NehaImg,
+                socials: [
+                  { name: 'FaInstagram', url: 'https://www.instagram.com/neha', color: '#E1306C' },
+                  { name: 'FaTwitter', url: 'https://twitter.com/rahul', color: '#1DA1F2' },
+                  { name: 'FaWhatsapp', url: 'https://wa.me/918888888888', color: '#25D366' },
+                ],
+              },
+              {
+                name: 'Rahul Verma',
+                role: 'Lead Developer',
+                img: RahulImg,
+                socials: [
+                  { name: 'FaInstagram', url: 'https://www.instagram.com/neha', color: '#E1306C' },
+                  { name: 'FaTwitter', url: 'https://twitter.com/rahul', color: '#1DA1F2' },
+                  { name: 'FaWhatsapp', url: 'https://wa.me/918888888888', color: '#25D366' },
+                ],
+              },
             ].map((member, index) => (
               <div
                 key={index}
@@ -72,6 +100,22 @@ const AboutUs = () => {
                 />
                 <h3 className="text-lg font-semibold">{member.name}</h3>
                 <p className="text-gray-600">{member.role}</p>
+
+                {/* Social Icons */}
+                <div className="flex justify-center gap-4 mt-4">
+                  {member.socials.map((social, i) => (
+                    <a
+                      key={i}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={social.name.replace('Fa', '')}
+                      className="hover:scale-110 transition"
+                    >
+                      <Icon name={social.name} size={22} color={social.color} />
+                    </a>
+                  ))}
+                </div>
               </div>
             ))}
           </div>

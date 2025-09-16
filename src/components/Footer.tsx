@@ -11,21 +11,21 @@ const Footer = () => {
           href="/cancellation-policy"
           className="btn-link text-white hover:text-yellow-400 transition-colors duration-300 flex items-center gap-1"
         >
-          <Icon name="FaBan" size={16} color="white" />
+          <Icon name="FaBan" size={16} color="#E53E3E" /> {/* red */}
           Cancellation Policy
         </a>
         <a
           href="/privacy-policy"
           className="btn-link text-white hover:text-yellow-400 transition-colors duration-300 flex items-center gap-1"
         >
-          <Icon name="FaUserSecret" size={16} color="white" />
+          <Icon name="FaUserSecret" size={16} color="#3182CE" /> {/* blue */}
           Privacy Policy
         </a>
         <a
           href="/terms-and-conditions"
           className="btn-link text-white hover:text-yellow-400 transition-colors duration-300 flex items-center gap-1"
         >
-          <Icon name="FaFileContract" size={16} color="white" />
+          <Icon name="FaFileContract" size={16} color="#38A169" /> {/* green */}
           Terms & Conditions
         </a>
       </div>

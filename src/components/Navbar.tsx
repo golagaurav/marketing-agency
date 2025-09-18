@@ -5,7 +5,6 @@ import MobileMenu from './MobileMenu';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : 'auto';
   }, [isOpen]);
@@ -14,7 +13,7 @@ const Navbar = () => {
     { label: 'Home', href: '/', icon: 'FaHome', color: '#3182CE' },
     { label: 'About Us', href: '/about-us', icon: 'FaInfoCircle', color: '#D69E2E' },
     { label: 'Services', href: '/services', icon: 'FaServicestack', color: '#38A169' },
-    { label: 'Contact', href: '/contact-us', icon: 'FaEnvelope', color: '#E53E3E' },    // Red
+    { label: 'Contact', href: '/contact-us', icon: 'FaEnvelope', color: '#E53E3E' },
   ];
 
   return (
@@ -23,7 +22,7 @@ const Navbar = () => {
       role="navigation"
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        {/* Logo */}
+
         <div
           className="hover:text-yellow-400 text-xl font-bold cursor-pointer"
           onClick={() => (window.location.href = '/')}

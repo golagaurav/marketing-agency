@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Icon from './ui/icon'; // ✅ adjust path if needed
+import Icon from './ui/icon';
 import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
@@ -11,9 +11,9 @@ const Navbar = () => {
   }, [isOpen]);
 
   const navItems = [
-    { label: 'Home', href: '/', icon: 'FaHome', color: '#3182CE' },          // Blue
-    { label: 'About Us', href: '/about-us', icon: 'FaInfoCircle', color: '#D69E2E' },  // Amber
-    { label: 'Services', href: '/services', icon: 'FaServicestack', color: '#38A169' }, // Green
+    { label: 'Home', href: '/', icon: 'FaHome', color: '#3182CE' },
+    { label: 'About Us', href: '/about-us', icon: 'FaInfoCircle', color: '#D69E2E' },
+    { label: 'Services', href: '/services', icon: 'FaServicestack', color: '#38A169' },
     { label: 'Contact', href: '/contact-us', icon: 'FaEnvelope', color: '#E53E3E' },    // Red
   ];
 

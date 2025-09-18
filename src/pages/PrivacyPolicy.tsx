@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { Divider } from '@heroui/react'; // Make sure this import matches your setup
 
 const PrivacyPolicy = () => {
   return (
@@ -25,6 +26,7 @@ const PrivacyPolicy = () => {
             <li>Usage data and analytics</li>
             <li>Cookies and tracking technologies</li>
           </ul>
+          <Divider className="mt-4" />
         </section>
 
         <section className="mb-10">
@@ -35,6 +37,7 @@ const PrivacyPolicy = () => {
             <li>To communicate with you</li>
             <li>To comply with legal obligations</li>
           </ul>
+          <Divider className="mt-4" />
         </section>
 
         <section className="mb-10">
@@ -42,6 +45,7 @@ const PrivacyPolicy = () => {
           <p>
             We do not sell or rent your personal information to third parties. We may share data with trusted partners for processing or legal reasons.
           </p>
+          <Divider className="mt-4" />
         </section>
 
         <section className="mb-10">
@@ -49,6 +53,7 @@ const PrivacyPolicy = () => {
           <p>
             We use reasonable technical and organizational measures to protect your data from unauthorized access, disclosure, or misuse.
           </p>
+          <Divider className="mt-4" />
         </section>
 
         <section className="mb-10">
@@ -58,6 +63,7 @@ const PrivacyPolicy = () => {
             <li>Request deletion of your data</li>
             <li>Withdraw consent for data processing</li>
           </ul>
+          <Divider className="mt-4" />
         </section>
 
         <section className="mb-10">
@@ -65,6 +71,7 @@ const PrivacyPolicy = () => {
           <p>
             We may update this Privacy Policy from time to time. Any changes will be posted on this page with the updated date.
           </p>
+          <Divider className="mt-4" />
         </section>
 
         <section className="mb-10">
@@ -73,6 +80,7 @@ const PrivacyPolicy = () => {
             If you have any questions about this Privacy Policy, please contact us at: <br />
             <strong>Email:</strong> support@example.com
           </p>
+          <Divider className="mt-4" />
         </section>
       </main>
       <Footer />

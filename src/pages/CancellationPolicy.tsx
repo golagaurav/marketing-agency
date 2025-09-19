@@ -18,7 +18,7 @@ const CancellationPolicy: React.FC = () => {
         </p>
 
         {/* Section 1 */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 rounded-lg border border-gray-300 hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaTimesCircle" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">1. Order Cancellations</h2>
@@ -31,7 +31,7 @@ const CancellationPolicy: React.FC = () => {
         </section>
 
         {/* Section 2 */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 rounded-lg border border-gray-300 hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaTools" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">2. Service-Based Cancellations</h2>
@@ -46,7 +46,7 @@ const CancellationPolicy: React.FC = () => {
         </section>
 
         {/* Section 3 */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 rounded-lg border border-gray-300 hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaSyncAlt" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">3. Subscription Services</h2>
@@ -59,7 +59,7 @@ const CancellationPolicy: React.FC = () => {
         </section>
 
         {/* Section 4 */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 rounded-lg border border-gray-300 hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaPhoneAlt" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">4. How to Cancel</h2>
@@ -79,7 +79,7 @@ const CancellationPolicy: React.FC = () => {
         </section>
 
         {/* Section 5 */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 rounded-lg border border-gray-300 hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaExclamationTriangle" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">5. Exceptions</h2>
@@ -92,7 +92,7 @@ const CancellationPolicy: React.FC = () => {
         </section>
 
         {/* Section 6 */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 rounded-lg border border-gray-300 hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaEdit" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">6. Policy Changes</h2>

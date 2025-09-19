@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { Divider } from '@heroui/react'; // Adjust path as needed
-import Icon from '../components/ui/icon'; // Your custom Icon component
+import { Divider } from '@heroui/react';
+import Icon from '../components/ui/icon';
 
 const CancellationPolicy: React.FC = () => {
   return (
@@ -18,90 +18,102 @@ const CancellationPolicy: React.FC = () => {
         </p>
 
         {/* Section 1 */}
-        <section className="mb-10 p-6 rounded-lg border border-gray-300 hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
-          <div className="flex items-center gap-2 mb-2">
-            <Icon name="FaTimesCircle" size={20} className="text-primary" />
-            <h2 className="text-2xl font-semibold">1. Order Cancellations</h2>
+        <section className="mb-10">
+          <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 p-6">
+            <div className="flex items-center gap-2 mb-2">
+              <Icon name="FaTimesCircle" size={20} className="text-primary" />
+              <h2 className="text-2xl font-semibold">1. Order Cancellations</h2>
+            </div>
+            <p>
+              You may cancel your order within <strong>24 hours</strong> of purchase for a full refund,
+              provided that the service or product has not yet been delivered or processed.
+            </p>
+            <Divider className="mt-4" />
           </div>
-          <p>
-            You may cancel your order within <strong>24 hours</strong> of purchase for a full refund,
-            provided that the service or product has not yet been delivered or processed.
-          </p>
-          <Divider className="mt-4" />
         </section>
 
         {/* Section 2 */}
-        <section className="mb-10 p-6 rounded-lg border border-gray-300 hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
-          <div className="flex items-center gap-2 mb-2">
-            <Icon name="FaTools" size={20} className="text-primary" />
-            <h2 className="text-2xl font-semibold">2. Service-Based Cancellations</h2>
+        <section className="mb-10">
+          <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 p-6">
+            <div className="flex items-center gap-2 mb-2">
+              <Icon name="FaTools" size={20} className="text-primary" />
+              <h2 className="text-2xl font-semibold">2. Service-Based Cancellations</h2>
+            </div>
+            <p>For digital services (e.g., web design, SEO, marketing):</p>
+            <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+              <li>Cancellations made within 24 hours are eligible for a full refund.</li>
+              <li>Cancellations after 24 hours may incur partial charges based on work completed.</li>
+              <li>Once a project has entered the final phase, cancellations are not eligible for refund.</li>
+            </ul>
+            <Divider className="mt-4" />
           </div>
-          <p>For digital services (e.g., web design, SEO, marketing):</p>
-          <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-            <li>Cancellations made within 24 hours are eligible for a full refund.</li>
-            <li>Cancellations after 24 hours may incur partial charges based on work completed.</li>
-            <li>Once a project has entered the final phase, cancellations are not eligible for refund.</li>
-          </ul>
-          <Divider className="mt-4" />
         </section>
 
         {/* Section 3 */}
-        <section className="mb-10 p-6 rounded-lg border border-gray-300 hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
-          <div className="flex items-center gap-2 mb-2">
-            <Icon name="FaSyncAlt" size={20} className="text-primary" />
-            <h2 className="text-2xl font-semibold">3. Subscription Services</h2>
+        <section className="mb-10">
+          <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 p-6">
+            <div className="flex items-center gap-2 mb-2">
+              <Icon name="FaSyncAlt" size={20} className="text-primary" />
+              <h2 className="text-2xl font-semibold">3. Subscription Services</h2>
+            </div>
+            <p>
+              You can cancel your subscription at any time. Your access will remain active until the end
+              of the billing cycle. We do not offer prorated refunds for unused time after cancellation.
+            </p>
+            <Divider className="mt-4" />
           </div>
-          <p>
-            You can cancel your subscription at any time. Your access will remain active until the end
-            of the billing cycle. We do not offer prorated refunds for unused time after cancellation.
-          </p>
-          <Divider className="mt-4" />
         </section>
 
         {/* Section 4 */}
-        <section className="mb-10 p-6 rounded-lg border border-gray-300 hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
-          <div className="flex items-center gap-2 mb-2">
-            <Icon name="FaPhoneAlt" size={20} className="text-primary" />
-            <h2 className="text-2xl font-semibold">4. How to Cancel</h2>
+        <section className="mb-10">
+          <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 p-6">
+            <div className="flex items-center gap-2 mb-2">
+              <Icon name="FaPhoneAlt" size={20} className="text-primary" />
+              <h2 className="text-2xl font-semibold">4. How to Cancel</h2>
+            </div>
+            <p>To request a cancellation, please contact us via:</p>
+            <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+              <li>
+                Email:{' '}
+                <a href="mailto:support@example.com" className="text-primary">
+                  support@example.com
+                </a>
+              </li>
+              <li>Phone: +1 (123) 456-7890</li>
+              <li>Live Chat available on our website</li>
+            </ul>
+            <Divider className="mt-4" />
           </div>
-          <p>To request a cancellation, please contact us via:</p>
-          <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-            <li>
-              Email:{' '}
-              <a href="mailto:support@example.com" className="text-primary">
-                support@example.com
-              </a>
-            </li>
-            <li>Phone: +1 (123) 456-7890</li>
-            <li>Live Chat available on our website</li>
-          </ul>
-          <Divider className="mt-4" />
         </section>
 
         {/* Section 5 */}
-        <section className="mb-10 p-6 rounded-lg border border-gray-300 hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
-          <div className="flex items-center gap-2 mb-2">
-            <Icon name="FaExclamationTriangle" size={20} className="text-primary" />
-            <h2 className="text-2xl font-semibold">5. Exceptions</h2>
+        <section className="mb-10">
+          <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 p-6">
+            <div className="flex items-center gap-2 mb-2">
+              <Icon name="FaExclamationTriangle" size={20} className="text-primary" />
+              <h2 className="text-2xl font-semibold">5. Exceptions</h2>
+            </div>
+            <p>
+              Some promotional offers or one-time discounted services may be marked as non-refundable.
+              These exceptions will be clearly stated at the time of purchase.
+            </p>
+            <Divider className="mt-4" />
           </div>
-          <p>
-            Some promotional offers or one-time discounted services may be marked as non-refundable.
-            These exceptions will be clearly stated at the time of purchase.
-          </p>
-          <Divider className="mt-4" />
         </section>
 
         {/* Section 6 */}
-        <section className="mb-10 p-6 rounded-lg border border-gray-300 hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
-          <div className="flex items-center gap-2 mb-2">
-            <Icon name="FaEdit" size={20} className="text-primary" />
-            <h2 className="text-2xl font-semibold">6. Policy Changes</h2>
+        <section className="mb-10">
+          <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 p-6">
+            <div className="flex items-center gap-2 mb-2">
+              <Icon name="FaEdit" size={20} className="text-primary" />
+              <h2 className="text-2xl font-semibold">6. Policy Changes</h2>
+            </div>
+            <p>
+              We reserve the right to update or modify this Cancellation Policy at any time. Changes will
+              be effective immediately upon posting on this page.
+            </p>
+            <Divider className="mt-4" />
           </div>
-          <p>
-            We reserve the right to update or modify this Cancellation Policy at any time. Changes will
-            be effective immediately upon posting on this page.
-          </p>
-          <Divider className="mt-4" />
         </section>
       </main>
       <Footer />

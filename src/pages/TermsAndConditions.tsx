@@ -21,7 +21,7 @@ const TermsAndConditions: React.FC = () => {
         </p>
 
         {/* 1. Introduction */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaFileContract" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">1. Introduction</h2>
@@ -34,7 +34,7 @@ const TermsAndConditions: React.FC = () => {
         </section>
 
         {/* 2. Use of Services */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaCogs" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">2. Use of Services</h2>
@@ -48,7 +48,7 @@ const TermsAndConditions: React.FC = () => {
         </section>
 
         {/* 3. Payments & Billing */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaCreditCard" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">3. Payments & Billing</h2>
@@ -61,7 +61,7 @@ const TermsAndConditions: React.FC = () => {
         </section>
 
         {/* 4. Intellectual Property */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaLightbulb" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">4. Intellectual Property</h2>
@@ -74,7 +74,7 @@ const TermsAndConditions: React.FC = () => {
         </section>
 
         {/* 5. Limitation of Liability */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaExclamationTriangle" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">5. Limitation of Liability</h2>
@@ -87,7 +87,7 @@ const TermsAndConditions: React.FC = () => {
         </section>
 
         {/* 6. Termination */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaPowerOff" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">6. Termination</h2>
@@ -99,7 +99,7 @@ const TermsAndConditions: React.FC = () => {
         </section>
 
         {/* 7. Governing Law */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaBalanceScale" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">7. Governing Law</h2>
@@ -112,7 +112,7 @@ const TermsAndConditions: React.FC = () => {
         </section>
 
         {/* 8. Changes to Terms */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaEdit" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">8. Changes to These Terms</h2>
@@ -125,7 +125,7 @@ const TermsAndConditions: React.FC = () => {
         </section>
 
         {/* 9. Contact Us */}
-        <section className="mb-10">
+        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaEnvelope" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">9. Contact Us</h2>

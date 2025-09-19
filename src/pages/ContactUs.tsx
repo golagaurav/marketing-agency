@@ -65,7 +65,7 @@ const ContactUs = () => {
             </div>
             <div className="bg-secondary p-6 rounded-lg shadow-sm">
               <h3 className="text-xl font-semibold mb-2">📞 Call Us</h3>
-              <p>+91 9800 520050</p>
+              <p>+91 xxxx xxxx99</p>
             </div>
           </div>
         </div>

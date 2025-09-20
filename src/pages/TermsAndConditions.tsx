@@ -138,7 +138,7 @@ const TermsAndConditions: React.FC = () => {
                 support@example.com
               </a>
             </li>
-            <li>Phone: +1 (123) 456-7890</li>
+            <li>Phone: +91 xxxx xxxx99</li>
           </ul>
           <Divider className="mt-4" />
         </section>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Icon from '../components/ui/icon';  // Make sure this path is correct
 
 const ContactUs = () => {
   return (
@@ -8,7 +9,10 @@ const ContactUs = () => {
       <Navbar />
       <main className="py-16 px-6 max-w-6xl mx-auto text-gray-800">
         <section className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-primary mb-4">Contact Us</h1>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Icon name="FaEnvelope" size={30} color="#E53E3E" />
+            <h1 className="text-4xl font-bold text-primary">Contact Us</h1>
+          </div>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             Have a question, project, or just want to say hello? We'd love to hear from you!
           </p>

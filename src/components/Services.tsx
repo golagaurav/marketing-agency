@@ -1,12 +1,17 @@
 import React from 'react';
-
-
+import Icon from '../components/ui/icon';
 
 const Services = () => {
 return (
     <section id="services" className="py-6 bg-secondary px-6">
     <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">What We Do Best</h2>
+        {/* Heading with icon */}
+        <div className="flex items-center justify-center gap-3 mb-12">
+        <Icon name="FaCheckCircle" size={36} color="#38A169" />
+        <h2 className="text-3xl md:text-4xl font-bold text-center">What We Do Best</h2>
+        </div>
+
+        {/* Services grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {[
             { icon: "🔍", title: "SEO/SEM", description: "Reach your audience with precision." },

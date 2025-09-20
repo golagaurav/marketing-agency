@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Divider } from '@heroui/react';
 import Icon from '../components/ui/icon';
+import BoxSection from '../components/ui/BoxSection'; // 👈 new import
 
 const LAST_UPDATED = 'September 11, 2025';
 
@@ -21,7 +22,7 @@ const TermsAndConditions: React.FC = () => {
         </p>
 
         {/* 1. Introduction */}
-        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
+        <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaFileContract" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">1. Introduction</h2>
@@ -31,10 +32,10 @@ const TermsAndConditions: React.FC = () => {
             agree to comply with and be bound by these terms.
           </p>
           <Divider className="mt-4" />
-        </section>
+        </BoxSection>
 
         {/* 2. Use of Services */}
-        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
+        <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaCogs" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">2. Use of Services</h2>
@@ -45,10 +46,10 @@ const TermsAndConditions: React.FC = () => {
             <li>You are responsible for maintaining the confidentiality of your account and password.</li>
           </ul>
           <Divider className="mt-4" />
-        </section>
+        </BoxSection>
 
         {/* 3. Payments & Billing */}
-        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
+        <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaCreditCard" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">3. Payments & Billing</h2>
@@ -58,10 +59,10 @@ const TermsAndConditions: React.FC = () => {
             pricing at any time with appropriate notice.
           </p>
           <Divider className="mt-4" />
-        </section>
+        </BoxSection>
 
         {/* 4. Intellectual Property */}
-        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
+        <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaLightbulb" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">4. Intellectual Property</h2>
@@ -71,10 +72,10 @@ const TermsAndConditions: React.FC = () => {
             distribute, or use our materials without permission.
           </p>
           <Divider className="mt-4" />
-        </section>
+        </BoxSection>
 
         {/* 5. Limitation of Liability */}
-        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
+        <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaExclamationTriangle" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">5. Limitation of Liability</h2>
@@ -84,10 +85,10 @@ const TermsAndConditions: React.FC = () => {
             Use of our website is at your own risk.
           </p>
           <Divider className="mt-4" />
-        </section>
+        </BoxSection>
 
         {/* 6. Termination */}
-        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
+        <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaPowerOff" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">6. Termination</h2>
@@ -96,10 +97,10 @@ const TermsAndConditions: React.FC = () => {
             We reserve the right to suspend or terminate your access to our services at any time, with or without cause or notice.
           </p>
           <Divider className="mt-4" />
-        </section>
+        </BoxSection>
 
         {/* 7. Governing Law */}
-        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
+        <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaBalanceScale" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">7. Governing Law</h2>
@@ -109,10 +110,10 @@ const TermsAndConditions: React.FC = () => {
             conflict of law principles.
           </p>
           <Divider className="mt-4" />
-        </section>
+        </BoxSection>
 
-        {/* 8. Changes to Terms */}
-        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
+        {/* 8. Changes to These Terms */}
+        <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaEdit" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">8. Changes to These Terms</h2>
@@ -122,10 +123,10 @@ const TermsAndConditions: React.FC = () => {
             acceptance of the new Terms.
           </p>
           <Divider className="mt-4" />
-        </section>
+        </BoxSection>
 
         {/* 9. Contact Us */}
-        <section className="mb-10 p-6 border rounded-lg transition-shadow hover:shadow-lg">
+        <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaEnvelope" size={20} className="text-primary" />
             <h2 className="text-2xl font-semibold">9. Contact Us</h2>
@@ -141,7 +142,7 @@ const TermsAndConditions: React.FC = () => {
             <li>Phone: +91 xxxx xxxx99</li>
           </ul>
           <Divider className="mt-4" />
-        </section>
+        </BoxSection>
       </main>
 
       <footer>

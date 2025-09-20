@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from './ui/Icon'; // Adjust path as needed
+import Icon from './ui/icon'; // Adjust path as needed
 
 interface MobileMenuProps {
   isOpen: boolean;

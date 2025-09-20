@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Icon from './ui/Icon';
+import Icon from './ui/icon';
 import MobileMenu from './MobileMenu';
 
 const Navbar = () => {

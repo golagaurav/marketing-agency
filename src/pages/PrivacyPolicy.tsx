@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Divider } from '@heroui/react';
-import Icon from '../components/ui/Icon';
-import BoxSection from '../components/ui/BoxSection'; // 👈 Import the reusable component
+import Icon from '../components/ui/icon';
+import BoxSection from '../components/ui/BoxSection';
 
 const PrivacyPolicy: React.FC = () => {
   return (

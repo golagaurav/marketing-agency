@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Divider } from '@heroui/react';
-import Icon from '../components/ui/Icon';
-import BoxSection from '../components/ui/BoxSection'; // 👈 new import
+import Icon from '../components/ui/icon';
+import BoxSection from '../components/ui/BoxSection';
 
 const LAST_UPDATED = 'September 11, 2025';
 

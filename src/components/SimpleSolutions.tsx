@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from './ui/icon';
+import Icon from './ui/Icon';
 
 const steps = [
 {

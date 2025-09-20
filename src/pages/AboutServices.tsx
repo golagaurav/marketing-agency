@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Icon from '../components/ui/icon';  // Import your Icon component
 
 const OurServices = () => {
   const services = [
@@ -40,8 +41,12 @@ const OurServices = () => {
     <>
       <Navbar />
       <main className="py-16 px-6 max-w-7xl mx-auto text-gray-800">
+        {/* Updated heading with icon */}
         <section className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-primary mb-4">Our Services</h1>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Icon name="FaServicestack" size={36} color="#38A169" />
+            <h1 className="text-4xl font-bold text-primary">Our Services</h1>
+          </div>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             Discover the range of digital services we offer to help your business grow and succeed.
           </p>

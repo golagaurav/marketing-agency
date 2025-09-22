@@ -3,12 +3,12 @@ import Icon from '../components/ui/icon';
 
 const Services = () => {
 return (
-    <section id="services" className="py-6 bg-secondary px-6">
+    <section id="services" className="bg-white dark:bg-gray-800 p-6 transition-all duration-300">
     <div className="max-w-6xl mx-auto">
         {/* Heading with icon */}
         <div className="flex items-center justify-center gap-3 mb-12">
         <Icon name="FaCheckCircle" size={36} color="#38A169" />
-        <h2 className="text-3xl md:text-4xl font-bold text-center">What We Do Best</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white">What We Do Best</h2>
         </div>
 
         {/* Services grid */}

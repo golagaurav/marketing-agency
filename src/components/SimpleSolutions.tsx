@@ -12,19 +12,19 @@ const steps = [
     number: 2,
     title: "Plan & Strategize",
     description: "We map out your roadmap.",
-    icon: "FaRegLightbulb", // FontAwesome icon
+    icon: "FaRegLightbulb",
 },
 {
     number: 3,
     title: "Execute",
     description: "We build, launch & optimize.",
-    icon: "AiOutlineBuild", // Ant Design icon
+    icon: "AiOutlineBuild",
 },
 {
     number: 4,
     title: "Grow",
     description: "You scale & thrive.",
-    icon: "FaChartLine", // FontAwesome icon
+    icon: "FaChartLine",
 },
 ];
 

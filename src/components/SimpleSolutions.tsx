@@ -6,7 +6,7 @@ const steps = [
     number: 1,
     title: "Reach Out",
     description: "Tell us your goals & challenges.",
-    icon: "MdOutlineContactMail", // Material Design icon
+    icon: "MdOutlineContactMail",
 },
 {
     number: 2,

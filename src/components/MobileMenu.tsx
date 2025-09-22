@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from './ui/icon'; // Adjust path as needed
+import Icon from './ui/icon';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -7,14 +7,14 @@ interface MobileMenuProps {
 }
 
 const navItems = [
-  { label: 'Home', href: '/', icon: 'FaHome', color: '#3182CE' },           // Blue
-  { label: 'About Us', href: '/about-us', icon: 'FaInfoCircle', color: '#D69E2E' }, // Amber
-  { label: 'Services', href: '/services', icon: 'FaServicestack', color: '#38A169' }, // Green
-  { label: 'Contact', href: '/contact-us', icon: 'FaEnvelope', color: '#E53E3E' },  // Red
+  { label: 'Home', href: '/', icon: 'FaHome', color: '#3182CE' },
+  { label: 'About Us', href: '/about-us', icon: 'FaInfoCircle', color: '#D69E2E' },
+  { label: 'Services', href: '/services', icon: 'FaServicestack', color: '#38A169' },
+  { label: 'Contact', href: '/contact-us', icon: 'FaEnvelope', color: '#E53E3E' },
 ];
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
-  if (!isOpen) return null; // completely hide when closed
+  if (!isOpen) return null;
 
   return (
     <div className="md:hidden absolute top-full left-0 w-full bg-gray-900 text-white z-50">

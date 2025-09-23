@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Icon from '../components/ui/icon';  // Make sure this path is correct
+import Icon from '../components/ui/icon';
 
 const ContactUs = () => {
   return (

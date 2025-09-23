@@ -1,8 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Icon from '../components/ui/icon';  // Import your Icon component
-
+import Icon from '../components/ui/icon';
 const OurServices = () => {
   const services = [
     {

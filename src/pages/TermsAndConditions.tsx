@@ -13,9 +13,13 @@ const TermsAndConditions: React.FC = () => {
       <Navbar />
 
       <main className="py-16 px-6 max-w-4xl mx-auto text-gray-800">
-        <h1 className="text-4xl font-bold mb-6 text-primary text-center">
-          Terms and Conditions
-        </h1>
+
+        <div className="flex flex-col md:flex-row items-center justify-center gap-3 text-center mb-6">
+          <Icon name="FaGavel" size={30} className="text-primary" />
+          <h1 className="text-3xl sm:text-4xl font-bold text-primary">
+            Terms and Conditions
+          </h1>
+        </div>
 
         <p className="text-center text-gray-600 mb-6">
           Last updated: <strong>{LAST_UPDATED}</strong>

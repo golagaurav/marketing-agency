@@ -15,7 +15,7 @@ const TermsAndConditions: React.FC = () => {
       <main className="py-16 px-6 max-w-4xl mx-auto text-gray-800">
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-3 text-center mb-6">
-          <Icon name="FaGavel" size={30} className="text-primary" />
+          <Icon name="FaGavel" size={30} color="#25ebe1ff" />
           <h1 className="text-3xl sm:text-4xl font-bold text-primary">
             Terms and Conditions
           </h1>

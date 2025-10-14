@@ -23,7 +23,6 @@ const CancellationPolicy: React.FC = () => {
           Last updated: <strong>September 11, 2025</strong>
         </p>
 
-        {/* Section 1 */}
         <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaTimesCircle" size={20} className="text-primary" />
@@ -36,7 +35,6 @@ const CancellationPolicy: React.FC = () => {
           <Divider className="mt-4" />
         </BoxSection>
 
-        {/* Section 2 */}
         <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaTools" size={20} className="text-primary" />
@@ -51,7 +49,6 @@ const CancellationPolicy: React.FC = () => {
           <Divider className="mt-4" />
         </BoxSection>
 
-        {/* Section 3 */}
         <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaSyncAlt" size={20} className="text-primary" />
@@ -64,7 +61,6 @@ const CancellationPolicy: React.FC = () => {
           <Divider className="mt-4" />
         </BoxSection>
 
-        {/* Section 4 */}
         <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaPhoneAlt" size={20} className="text-primary" />
@@ -84,7 +80,6 @@ const CancellationPolicy: React.FC = () => {
           <Divider className="mt-4" />
         </BoxSection>
 
-        {/* Section 5 */}
         <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaExclamationTriangle" size={20} className="text-primary" />
@@ -97,7 +92,6 @@ const CancellationPolicy: React.FC = () => {
           <Divider className="mt-4" />
         </BoxSection>
 
-        {/* Section 6 */}
         <BoxSection>
           <div className="flex items-center gap-2 mb-2">
             <Icon name="FaEdit" size={20} className="text-primary" />

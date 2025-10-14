@@ -11,7 +11,6 @@ const AboutUs = () => {
     <>
       <Navbar />
       <main className="py-16 px-6 max-w-6xl mx-auto text-gray-800">
-        {/* Hero / Intro Section */}
         <section className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Icon name="FaInfoCircle" size={30} color="#cde546ff" />
@@ -22,7 +21,6 @@ const AboutUs = () => {
           </p>
         </section>
 
-        {/* Company Story */}
         <section className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">Who We Are</h2>
           <p className="text-gray-700 leading-relaxed">
@@ -31,7 +29,6 @@ const AboutUs = () => {
           </p>
         </section>
 
-        {/* Mission / Vision / Values */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-2">🚀 Our Mission</h3>
@@ -56,7 +53,6 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* ✅ Team Section with Colorful Social Icons */}
         <section className="mb-20 text-center">
           <div className="flex items-center justify-center gap-2 mb-6">
             <Icon name="FaUsers" size={26} color="#45d4b1ff" />
@@ -107,7 +103,6 @@ const AboutUs = () => {
                 <h3 className="text-lg font-semibold">{member.name}</h3>
                 <p className="text-gray-600">{member.role}</p>
 
-                {/* Social Icons */}
                 <div className="flex justify-center gap-4 mt-4">
                   {member.socials.map((social, i) => (
                     <a
@@ -127,7 +122,6 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* CTA */}
         <section className="text-center">
           <h2 className="text-2xl font-bold mb-4">Let’s Grow Together</h2>
           <p className="text-gray-600 mb-6">

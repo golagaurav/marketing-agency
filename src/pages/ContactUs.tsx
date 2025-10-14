@@ -19,7 +19,6 @@ const ContactUs = () => {
         </section>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Form */}
           <form className="bg-white p-8 rounded-xl shadow-md space-y-6">
             <div>
               <label className="block text-sm font-medium mb-1">Your Name</label>
@@ -53,7 +52,6 @@ const ContactUs = () => {
             </button>
           </form>
 
-          {/* Contact Info */}
           <div className="space-y-6">
             <div className="bg-secondary p-6 rounded-lg shadow-sm">
               <h3 className="text-xl font-semibold mb-2">📍 Our Office</h3>

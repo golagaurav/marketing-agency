@@ -40,7 +40,6 @@ const OurServices = () => {
     <>
       <Navbar />
       <main className="py-16 px-6 max-w-7xl mx-auto text-gray-800">
-        {/* Updated heading with icon */}
         <section className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Icon name="FaServicestack" size={36} color="#38A169" />

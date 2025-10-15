@@ -9,7 +9,6 @@ return (
 
 <main className="min-h-screen bg-gray-50 py-16 px-6">
     <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          {/* ================= Left Content ================= */}
         <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             Let's Get Started 🚀
@@ -26,7 +25,6 @@ return (
             </ul>
         </div>
 
-          {/* ================= Right Form ================= */}
         <div className="bg-white p-8 rounded-xl shadow-lg">
             <form className="space-y-6">
             <div>

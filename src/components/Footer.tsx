@@ -1,5 +1,4 @@
-// src/components/Footer.tsx
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Select, { Option } from './ui/Select';
 
 const policyOptions: Option[] = [
@@ -11,10 +10,19 @@ const policyOptions: Option[] = [
 const Footer: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<string | number>('');
 
+  // Set selected option based on current URL
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    const matchedOption = policyOptions.find(option => option.value === currentPath);
+    if (matchedOption) {
+      setSelectedOption(matchedOption.value);
+    }
+  }, []);
+
   const handleChange = (value: string | number) => {
     setSelectedOption(value);
     if (typeof value === 'string' && value) {
-      window.location.assign(value); // avoids full page reload if possible
+      window.location.assign(value);
     }
   };
 
@@ -26,7 +34,6 @@ const Footer: React.FC = () => {
 
       <div className="flex items-center space-x-4 justify-center md:justify-end w-full md:w-auto">
         <div className="w-60 text-black">
-          {/* Hidden label for screen readers */}
           <label htmlFor="policy-select" className="sr-only">
             Select Policy
           </label>

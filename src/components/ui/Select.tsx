@@ -1,3 +1,4 @@
+// src/components/ui/Select.tsx
 import React from 'react';
 
 export interface Option {
@@ -6,6 +7,7 @@ export interface Option {
 }
 
 interface SelectProps {
+  id?: string; // ✅ Added for accessibility
   options: Option[];
   value: string | number;
   onChange: (value: string | number) => void;
@@ -15,6 +17,7 @@ interface SelectProps {
 }
 
 const Select: React.FC<SelectProps> = ({
+  id,
   options,
   value,
   onChange,
@@ -24,6 +27,7 @@ const Select: React.FC<SelectProps> = ({
 }) => {
   return (
     <select
+      id={id}
       value={value}
       onChange={(e) => onChange(e.target.value)}
       disabled={disabled}

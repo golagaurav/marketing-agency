@@ -10,7 +10,6 @@ const policyOptions: Option[] = [
 const Footer: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<string | number>('');
 
-  // Set selected option based on current URL
   useEffect(() => {
     const currentPath = window.location.pathname;
     const matchedOption = policyOptions.find(option => option.value === currentPath);
